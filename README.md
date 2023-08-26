@@ -10,3 +10,6 @@ The data for both cities includes:
   - full descriptions and average review score
 - reviews.csv:
   - unique id for each reviewer and detailed comments
+ 
+Looking at the data there are three questions we can dedicate ourselves during this analysis:
+- 
