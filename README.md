@@ -73,3 +73,17 @@ The result looks somewhat like follows:
 |Seattle|Alki|quiet,beautiful,old,open,urban|
 |Seattle|Arbor Heights|quick,awesome,beautiful,convenient,free|
 |Seattle|Atlantic|quiet,easy,good,urban,asian|
+
+### 2. Is there a significant difference between ratings in Seattle and Boston?
+Guests have the possibility to rate a location after they stayed there. The rating can be found in the *listings* table in column 'review_scores_value'. Guests can give a rating from 1 to 10 with 1 being the worst and 10 being the best.
+
+In average ratings are at about 9.17 for Boston and 9.45 for Seattle. So obviously ratings are slightly better for locations in Seattle. The question we try to answer is whether the difference is statistically significant.
+Normally a one-sided t-test would be performed. But drawing histograms for the distribution of ratings for both cities indicates very clearly that the ratings are not normally distributed.
+
+Since normal distribution is a prerequisite for a t-test we have to use a nonparametrical test in this case. So I performed a Wilcoxon rank sum test using the module **scipy** with the hypotheses
+
+```math
+H_{0}: \mu_{0}\geq\mu_{1} \qquad vs. \qquad H_{1}: \mu_{0} < \mu_{1}
+```
+
+The p-value is close to 0. That means we can reject the null hypothesis by significance level 5%. So the ratings of listings in Boston are significally lower than the ratings in Seattle.
