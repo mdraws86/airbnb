@@ -87,3 +87,8 @@ H_{0}: \mu_{0}\geq\mu_{1} \qquad vs. \qquad H_{1}: \mu_{0} < \mu_{1}
 ```
 
 The p-value is close to 0. That means we can reject the null hypothesis by significance level 5%. So the ratings of listings in Boston are significally lower than the ratings in Seattle.
+
+### 3. What are the busiest times of the year to visit both cities? By how much do prices spike?
+![Unavailability](https://github.com/mdraws86/airbnb/blob/main/images/Unavailability.png)
+
+![Prices](https://github.com/mdraws86/airbnb/blob/main/images/Prices.png)
