@@ -15,21 +15,9 @@ The data for both cities includes:
   - unique id for each reviewer and detailed comments
  
 Looking at the data there are three questions we can dedicate ourselves during this analysis:
-<<<<<<< HEAD
 1. **Can you describe the vibe of each neighborhood using listing descriptions?**
 2. **Is there a significant difference between ratings in Seattle and Boston?**
 3. **What are the busiest times of the year to visit both cities? By how much do prices spike?**
-=======
-<<<<<<< HEAD
-1. **Can you describe the vibe of each neighborhood using listing descriptions?**
-2. **Is there a significant difference between ratings in Seattle and Boston?**
-3. **What are the busiest times of the year to visit both cities? By how much do prices spike?**
-=======
-1. Can you describe the vibe of each neighborhood using listing descriptions?
-2. Is there a significant difference between ratings in Seattle and Boston?
-3. What are the busiest times of the year to visit both cities? By how much do prices spike?
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
 
 To answer these questions a Jupyter Notebook was created using Python with the following libraries:
 - pandas
@@ -65,9 +53,9 @@ Some of the above columns where transformed to dates, others to boolian or float
 After further analysis it turned out that the column 'license' is always missing and the columns 'country_code', 'country', 'has_availability', 'jurisdiction_names', 'experiences_offered' and 'requires_license' only contain one distinct value.  
 So those fields were dropped from the data set because they add no value for the ongoing analysis.
 
-*Listings* was the only table that already contained oinformation about the city. However it did not just contain the values 'Boston' and 'Seattle'. So I mapped other values to these two.
+*Listings* was the only table that already contained information about the city. However it did not just contain the values 'Boston' and 'Seattle'. So I mapped other values to these two.
 
 #### Reviews
-Taking a look at the 'reviews' table it seems we don't need to clean anything.
+Taking a look at the 'reviews' table, it seems we don't need to clean anything.
 
 ### 1. Can you describe the vibe of each neighborhood using listing descriptions?
