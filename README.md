@@ -56,6 +56,20 @@ So those fields were dropped from the data set because they add no value for the
 *Listings* was the only table that already contained information about the city. However it did not just contain the values 'Boston' and 'Seattle'. So I mapped other values to these two.
 
 #### Reviews
-Taking a look at the 'reviews' table, it seems we don't need to clean anything.
+Taking a look at the *reviews* table, it seems we don't need to clean anything.
 
 ### 1. Can you describe the vibe of each neighborhood using listing descriptions?
+In the *listings* table there are two columns named 'neighborhood' and 'neighborhood_overview'. 'Neighborhood' contains the district of a city while 'neighborhood_overview' offers a short description of the district phrased by the host.  
+To make a description you have to use adjectives. For example something is *beautiful* or an environment is *quiet*.
+
+The module **spacy** in Python provides the possibility to extract adjectives from a text. I did that for every 'neighborhood_overview', counted the adjectives for each neighborhood and kept the five most frequent ones. Then I combined them again in a comma separated string.  
+The result looks somewhat like follows:
+
+|City|Neighborhood|Neighborhood_Vibe|
+|------------|-------------------|------------------------------|
+|Boston|Allston-Brighton|safe,quiet,young,easy,convenient|
+|Boston|Back Bay|historic,beautiful,public,fashionable,famous|
+|Boston|Beacon Hill|historic,antique,beautiful,desirable,public|
+|Seattle|Alki|quiet,beautiful,old,open,urban|
+|Seattle|Arbor Heights|quick,awesome,beautiful,convenient,free|
+|Seattle|Atlantic|quiet,easy,good,urban,asian|
