@@ -15,9 +15,15 @@ The data for both cities includes:
   - unique id for each reviewer and detailed comments
  
 Looking at the data there are three questions we can dedicate ourselves during this analysis:
+<<<<<<< HEAD
 1. **Can you describe the vibe of each neighborhood using listing descriptions?**
 2. **Is there a significant difference between ratings in Seattle and Boston?**
 3. **What are the busiest times of the year to visit both cities? By how much do prices spike?**
+=======
+1. Can you describe the vibe of each neighborhood using listing descriptions?
+2. Is there a significant difference between ratings in Seattle and Boston?
+3. What are the busiest times of the year to visit both cities? By how much do prices spike?
+>>>>>>> refs/remotes/origin/main
 
 To answer these questions a Jupyter Notebook was created using Python with the following libraries:
 - pandas
