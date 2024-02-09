@@ -87,3 +87,30 @@ H_{0}: \mu_{0}\geq\mu_{1} \qquad vs. \qquad H_{1}: \mu_{0} < \mu_{1}
 ```
 
 The p-value is close to 0. That means we can reject the null hypothesis by significance level 5%. So the ratings of listings in Boston are significally lower than the ratings in Seattle.
+
+### 3. What are the busiest times of the year to visit both cities? By how much do prices spike?
+To answer the question for the busiest time of the year in Boston and Seattle we look at the following plot.
+
+![Unavailability](https://github.com/mdraws86/airbnb/blob/main/images/Unavailability.png)
+
+As I am not capable of explaining the strong decrease at the beginning of both curves (probably it was a change in law in the states of Massachusetts and Washington) I will ignore these parts and concentrate on time interval of about March 2016 to January 2017 for Seattle and December 2016 to September 2017 for Boston.  
+For both cities we can see that there is an increase in average unavailability rate around March when spring begins which usually means the weather gets better.
+
+For Seattle we observe another increase at about July presumably due to the summer and afterwards a steady decrease in fall and winter as it gets colder.
+
+In Boston the average unavailability rate is pretty constant after the increase during spring until September with an exception around April 15th. Usually Boston Marathon takes place around that date which explains the short peak of unavailabilty.
+
+Generally Boston has higher unavailability rates than Seattle.
+
+Looking at the next plot we can make some statements about the price developement over the year in both cities.
+
+![Prices](https://github.com/mdraws86/airbnb/blob/main/images/Prices.png)
+
+The price level is generally lower in Seattle over the whole year.  
+Seattle has a clear seasonal component for the seasons with lower prices in winter and higher prices during summer. There is another seasonal component for the weeks with higher prices during the weekend. Additionally we can see an overall positive trend for prices in Seattle.
+
+For Boston the curve looks quite strange at the beginning just like the one for unavailability rates. But from January 2017 on it looks similar to Seattle just on a higher price level. That means prices are lower on average during winter and higher during summer. Also we can see the same seasonal component for the weeks, with higher prices for the weekends.
+
+Like in the plot for unavailability one can see a clear peak at around April 15th. So not only more guests are looking for an accommodation during that time, they also have to pay significantly higher prices during Boston Marathon.
+
+The difference between highest and lowest price for Boston is almost 110 Dollars while it is only about 40 Dollars for Seattle.
