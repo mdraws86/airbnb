@@ -25,7 +25,17 @@ To answer these questions a Jupyter Notebook was created using Python with the f
 - spacy
 - scipy
 
-I would like to thank [Udacity](https://www.udacity.com) for the great opportunity to learn and improve my skills and [Airbnb](https://www.airbnb.com) for providing the data. Additionally I want to thank [Kaggle](https://www.kaggle.com) for being such a great platform for data science and hosting all data used for this analysis.
+## Blogpost
+Please consider to also read my blogpost on [Medium](https://medium.com/@ma.draws/boston-or-seattle-an-airbnb-perspective-df0ababbbeb6).
+
+## Licensing, Authors and Acknowledgements
+- Data source: [Airbnb Data Sets for Boston](https://www.kaggle.com/datasets/airbnb/boston), [Airbnb Data Sets for Seattle](https://www.kaggle.com/datasets/airbnb/seattle) (Kaggle)
+- Acknowledgements:
+
+Data Set Credits
+Airbnb (2019)
+
+- License [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Analysis
 This chapter includes a summary of the analysis for each question raised in the introduction.  
